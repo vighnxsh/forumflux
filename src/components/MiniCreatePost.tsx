@@ -17,8 +17,11 @@ const MiniCreatePost: FC<MiniCreatePostProps> = ({ session }) => {
   const pathname = usePathname();
 
   return (
-    <li className="overflow-hidden rounded-md bg-white shadow">
+   
+   <li className="overflow-hidden rounded-md bg-indigo-100 shadow">
+      
       <div className="h-full px-6 py-6 flex justify-between gap-6">
+       
         <div className="relative">
           <UserAvatar
             user={{

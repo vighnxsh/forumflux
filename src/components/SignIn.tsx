@@ -9,7 +9,7 @@ const SignIn = () => {
         <Icons.logo className="mx-auto h-6 w-6" />
         <h1 className="text-2xl font-semibold tracking-tight"> Welcome back</h1>
         <p className="text-sm max-w-xs mx-auto">
-          By contiuning, you are setting up a Breadit account and agree to our
+          By contiuning, you are setting up forum flux account and agree to our
           User Agreement and Privacy Policy.
         </p>
 
@@ -17,7 +17,7 @@ const SignIn = () => {
         <UserAuthForm />
 
         <p className="px-8 text-center text-sm text-zinc-700">
-          New to Breadit?{" "}
+          New to Forum flux?{" "}
           <Link
             href={"/sign-up"}
             className="hover:text-zinc-800 text-sm underline underline-offset-4"

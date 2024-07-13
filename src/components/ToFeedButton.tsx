@@ -10,9 +10,9 @@ const ToFeedButton = () => {
   const subredditPath = getSubredditPath(pathname);
 
   return (
-    <a href={subredditPath} className={buttonVariants({ variant: "ghost" })}>
+    <a href={subredditPath} className={buttonVariants({ variant: "custom" })}>
       <ChevronLeft className="h-4 w-4 mr-1" />
-      {subredditPath === "/" ? "Back home" : "Back to community"}
+      {subredditPath === "/" ? "" : "Back to community"}
     </a>
   );
 };

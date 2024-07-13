@@ -4,8 +4,11 @@ import { Toaster } from "@/components/ui/Toaster";
 import { cn } from "@/lib/utils";
 import "@/styles/globals.css";
 import { Inter } from "next/font/google";
+import { AiOutlineFunction } from "react-icons/ai";
+
 export const metadata = {
-  title: "Breadit",
+  
+  title: "forumflux",
   description: "A Reddit clone built with Next.js and TypeScript.",
 };
 
@@ -22,12 +25,12 @@ export default function RootLayout({
     <html
       lang="en"
       className={cn(
-        "bg-white text-slate-900 antialiased light",
+        "bg-white text-slate-100 antialiased light",
         inter.className
       )}
     >
       <body
-        className="min-h-screen pt-12 bg-slate-100 antialiased"
+        className="min-h-screen pt-12 bg-gradient-to-r from-indigo-900  to-violet-500 antialiased"
         suppressHydrationWarning={true}
       >
         <Providers>

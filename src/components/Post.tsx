@@ -21,7 +21,7 @@ interface PostProps {
   commentAmt: number;
 }
 
-const Post: FC<PostProps> = ({
+const Postt: FC<PostProps> = ({
   post,
   votesAmt: _votesAmt,
   currentVote: _currentVote,
@@ -31,7 +31,7 @@ const Post: FC<PostProps> = ({
   const pRef = useRef<HTMLParagraphElement>(null);
 
   return (
-    <div className="rounded-md bg-white shadow">
+    <div className="rounded-lg bg-white shadow-2xl">
       <div className="px-6 py-4 flex justify-between">
         <PostVoteClient
           postId={post.id}
@@ -40,7 +40,7 @@ const Post: FC<PostProps> = ({
         />
 
         <div className="w-0 flex-1">
-          <div className="max-h-40 mt-1 text-xs text-gray-500">
+          <div className="max-h-40 mt-1 text-xs text-violet-500">
             {subredditName ? (
               <>
                 <a
@@ -52,7 +52,7 @@ const Post: FC<PostProps> = ({
                 <span className="px-1">•</span>
               </>
             ) : null}
-            <span>Posted by u/{post.author.username}</span>{" "}
+            <span>Posted by /{post.author.username}</span>{" "}
             {formatTimeToNow(new Date(post.createdAt))}
           </div>
           <a href={`/r/${subredditName}/post/${post.id}`}>
@@ -74,7 +74,7 @@ const Post: FC<PostProps> = ({
         </div>
       </div>
 
-      <div className="bg-gray-50 z-20 text-sm px-4 py-4 sm:px-6">
+      <div className="bg-violet-100 hover:bg-violet-200 z-20 text-sm px-4 py-4 sm:px-6 border-b-2 rounded-lg">
         <Link
           href={`/r/${subredditName}/post/${post.id}`}
           className="w-fit flex items-center gap-2"
@@ -85,4 +85,4 @@ const Post: FC<PostProps> = ({
     </div>
   );
 };
-export default Post;
+export default Postt;

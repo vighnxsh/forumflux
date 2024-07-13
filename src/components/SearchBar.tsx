@@ -74,6 +74,7 @@ const SearchBar: FC<SearchBarProps> = ({}) => {
         }}
         className="outline-none border-none focus:border-none focus:outline-none ring-0"
         placeholder="Search communities..."
+        
       />
 
       {input.length > 0 ? (

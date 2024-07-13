@@ -11,14 +11,19 @@ import { User } from "next-auth";
 import UserAvatar from "./UserAvatar";
 import Link from "next/link";
 import { signOut } from "next-auth/react";
-
+//@ts-ignore
 interface UserAccountNavProps extends React.HTMLAttributes<HTMLDivElement> {
   user: Pick<User, "name" | "image" | "email">;
 }
 
 export function UserAccountNav({ user }: UserAccountNavProps) {
   return (
-    <DropdownMenu>
+    
+    <DropdownMenu >
+      {/* @ts-ignore */}
+      {/* <h1 className="text-white">  {user.username}
+      </h1> */}
+     
       <DropdownMenuTrigger>
         <UserAvatar
           className="h-8 w-8"
@@ -63,7 +68,7 @@ export function UserAccountNav({ user }: UserAccountNavProps) {
               callbackUrl: `${window.location.origin}/sign-in`,
             });
           }}
-          className="cursor-pointer"
+          className="cursor-pointer text-red-500 font-semibold hover:bg-red-200 "
         >
           Sign Out
         </DropdownMenuItem>

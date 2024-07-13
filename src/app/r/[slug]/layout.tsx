@@ -63,9 +63,9 @@ const Layout = async ({
 
           {/* info sidebar */}
 
-          <div className="hidden md:block overflow-hidden h-fit rounded-lg border border-gray-200 order-first md:order-last">
+          <div className="hidden md:block overflow-hidden h-fit rounded-lg border border-gray-200 bg-violet-200 order-first md:order-last mt-[80px]">
             <div className="px-6 py-4">
-              <p className="font-semibold py-3">About r/{subreddit.name}</p>
+              <p className="font-semibold py-3">About {subreddit.name} forum</p>
             </div>
 
             <dl className="divide-y divide-gray-100 px-6 py-4 text-sm leading-6 bg-white">
@@ -102,8 +102,8 @@ const Layout = async ({
               <Link
                 href={`r/${slug}/submit`}
                 className={buttonVariants({
-                  variant: "outline",
-                  className: "w-full mb-6",
+
+                  className: "w-full mb-6 bg-violet-800 hover:bg-violet-500",
                 })}
               >
                 Create Post

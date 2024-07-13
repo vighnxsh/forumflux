@@ -3,8 +3,8 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function middleware(req: NextRequest) {
   const token = await getToken({ req });
-  const session = token ? token.session : null;
-  if (!session) {
+
+  if (!token) {
     return NextResponse.redirect(new URL("/sign-in", req.nextUrl));
   }
 }

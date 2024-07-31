@@ -7,7 +7,8 @@ A dynamic forum platform built with modern web technologies. Users can create co
  Steps to set this up locally
  
  
->`git clone https://github.com/vighnxsh/forumflux`
+
+    git clone https://github.com/vighnxsh/forumflux
 
 Navigate and open the repository in terminal
 

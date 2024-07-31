@@ -17,7 +17,7 @@ Navigate and open the repository in terminal
 ## **Add environment variables**
 
   
- for Database go to aiven.io and boot up a mysql database or any other mysql provider of your choice.
+ for Database go to [aiven.io](aiven.io) and boot up a mysql database or any other mysql provider of your choice.
  
  ***OR***
 
@@ -28,7 +28,7 @@ Spin up a docker container.
     GOOGLE_CLIENT_ID
     GOOGLE_CLIENT_SECRET
 
-**For these variables go to cloud.google.com**
+**For these variables go to [cloud.google.com](cloud.google.com)**
 
 other important links for env variables
 

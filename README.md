@@ -37,10 +37,20 @@ other important links for env variables
 > 
 > https://upstash.com/
 
-    
-
-
-
-
  
-  
+
+   
+   After setting up env variables 
+
+run 
+
+    npx prisma migrate dev
+
+
+ Add some seed data if you want to 
+
+finally run
+
+    npm run dev
+
+

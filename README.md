@@ -1,5 +1,5 @@
 
-#Forum Flux
+Forum Flux
 
 A dynamic forum platform built with modern web technologies. Users can create communities, 
 share posts, and engage through voting and commenting. The application leverages Next.js for efficient rendering, 
